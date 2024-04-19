@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Simple Calculator</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ccc;
+        }
+        h1 {
+            border-bottom: 1px dashed black;
+        }
+        button {
+            background-color: #cc0000;
+            border: black 5px solid;
+            border-radius: 50%;
+            box-shadow: 10px 10px 1px #800000;
+
+            font-size: 2rem;
+
+            width: 200px;
+            height: 200px;
+
+            &:hover {
+                background-color: #ff0000;
+            }
+        }
+        .output {
+            color: #555;
+            font-size: 0.75em;
+            font-family: 'Courier New', Courier, monospace;
+            border-top: 1px dashed black;
+        }
+    </style>
 </head>
 <body>
     <h1>JS Simple Calculator</h1>
-    <p>Check console.log for result of JS</p>
+    <p>Check console for result of JS</p>
+    <p><button id="btn">Start Script</button></p>
 
-    
+    <div class="output">
+        <h2>output</h2>
+        <p id = "output1">No Output yet!</p>
+        <p id = "output2">No Output yet!</p>
+        <p id = "output3">No Output yet!</p>
+        <p id = "output4">No Output yet!</p>
+
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
